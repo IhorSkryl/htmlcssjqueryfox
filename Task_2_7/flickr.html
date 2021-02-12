@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8" />
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"
+      ></script>
+      <title>Flickr Feed</title>	
+
+      <style>
+         * {
+            box-sizing: border-box;
+         }
+
+         body {
+            padding: 0 20px;
+            margin: 0;
+         }
+
+         .wrapper {
+            width: 100%;
+            margin: 0 auto;
+         }
+
+         #photos {
+            width: 100%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+         }
+
+         .wrap {
+				width: 30%;
+				text-align: center;
+			}
+			
+			.title {
+				margin-top: 0;
+				margin-bottom: 30px;
+			}
+
+         .image {
+            /* float: left; */
+            padding: 10px;
+            border: solid 1px rgb(27, 45, 94);
+            background-color: white;
+				/* margin: 0 30px 10px 0; */
+         }
+
+         .image:hover {
+            border-color: red;
+            background-color: rgb(204, 204, 204);
+         }
+      </style>
+
+      <!-- Put jQuery here -->
+      <script src=""></script>
+      <script>
+         $(document).ready(function () {
+            let id = "25053835@N03";
+            let format = "json";
+            let url = `https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?`;
+
+            $.getJSON(url, {
+               id: id,
+               format: format,
+            }).done(function (data) {
+               let items = [];
+               $.each(data.items, function (index, item) {
+                  let title = item.title;
+                  if (title.length > 20) {
+                     title = title.substr(0, 30).trim() + "...";
+                  }
+                  items.push(`<div class="wrap">
+									<img src=${item.media.m} class="image" />
+									<p class="title">${title}</p>
+								</div>`);
+               });
+               $("#photos").html(items.join(""));
+            });
+         }); // end ready
+      </script>
+   </head>
+   <body>
+      <div class="wrapper">
+         <header>
+            Flickr Gallery
+         </header>
+         <div class="content">
+            <div class="main">
+               <h1>Flickr Images</h1>
+               <div id="photos"></div>
+               <br class="clearLeft" />
+            </div>
+         </div>
+         <footer></footer>
+      </div>
+   </body>
+</html>

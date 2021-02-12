@@ -1,0 +1,216 @@
+$tasks_bg: #f4f5f7;
+$text_color: #000000b2;
+$grey_shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+$green_shadow: 0px 1px 1px 1px rgba(17, 94, 7, 0.637);
+$red_shadow: 0px 1px 1px 1px rgba(122, 13, 13, 0.637);
+$font_family: "Montserrat", sans-serif;
+
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: $font_family;
+   color: $text_color;
+
+   p {
+      margin: 0;
+      padding: 0;
+   }
+
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+}
+
+.todo {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.todo__container {
+   padding: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+
+   @media screen and (min-width: 650px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+   }
+}
+
+// first column with TO BE DONE tasks
+%styles_for_columns_with_tasks {
+   min-height: 200px;
+   width: 300px;
+   min-width: 300px;
+   border-radius: 10px;
+   background: $tasks_bg;
+   padding: 10px 5px;
+
+   h2 {
+      margin: 0 0 5px 0;
+      padding: 0 5px;
+   }
+}
+
+.todo__to-be-done {
+   margin-bottom: 20px;
+   @extend %styles_for_columns_with_tasks;
+
+   @media screen and (min-width: 650px) {
+      margin-bottom: 0;
+      margin-right: 20px;
+   }
+}
+
+// second column with COMPLETED tasks
+.todo__completed {
+   @extend %styles_for_columns_with_tasks;
+}
+
+// ADD TASK BUTTON
+.todo__add-task {
+   padding: 10px;
+   margin-top: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.2s;
+   &:hover {
+      background: #e2e4e9;
+   }
+}
+
+// TO DO TASK that user is wrighting himself
+%styles_for_tasks {
+   margin-bottom: 5px;
+   border-radius: 5px;
+   background: #fff;
+   position: relative;
+   cursor: pointer;
+
+   p {
+      margin-right: 5px;
+      padding-left: 10px;
+   }
+}
+
+.todo__task {
+   box-shadow: $grey_shadow;
+   @extend %styles_for_tasks;
+}
+
+// TO DO COMPLETED TASK that is dragging to completed column
+.todo__completed-task {
+   box-shadow: $green_shadow;
+   @extend %styles_for_tasks;
+}
+
+.todo__error-task {
+   box-shadow: $red_shadow;
+   @extend %styles_for_tasks;
+}
+
+.todo__task-inner {
+   height: 100%;
+   width: 100%;
+   padding: 15px 0;
+   border-radius: 5px;
+   transition: 0.3s;
+   &:active {
+      cursor: grabbing;
+   }
+   &:hover {
+      background: $tasks_bg;
+   }
+}
+
+// TO DO ICONS - complete and remove icons
+@mixin icons($color) {
+   transition: 0.2s;
+   font-size: 1.4rem;
+   &:hover {
+      color: $color;
+   }
+}
+
+.todo__icons {
+   display: flex;
+   opacity: 0;
+   position: absolute;
+   right: 10px;
+   top: 10px;
+   padding: 5px;
+   background: #e2e4e9;
+   border-radius: 5px;
+   transition: 0.5s;
+   cursor: pointer;
+
+   .todo__task:hover & {
+      opacity: 1;
+   }
+
+   .todo__completed-task:hover & {
+      opacity: 1;
+   }
+
+   .todo__error-task:hover & {
+      opacity: 1;
+   }
+
+   .fa-check-circle {
+      margin-right: 10px;
+      @include icons( green);
+   }
+
+   .fa-trash {
+      @include icons(red);
+   }
+}
+
+// prompt when user is hovering the COMPLETE or REMOVE ICON
+[data-prompt] {
+   position: relative;
+}
+
+[data-prompt]::after {
+   content: attr(data-prompt);
+   position: absolute;
+   left: -150%;
+   top: 30px;
+   z-index: 10;
+   background: rgb(61, 61, 61);
+   color: #fff;
+   font-family: $font_family;
+   padding: 5px;
+   border-radius: 5px;
+   font-size: 0.8rem;
+   pointer-events: none;
+   opacity: 0;
+}
+
+[data-prompt]:hover::after {
+   transition: 0.3s;
+   opacity: 1;
+   z-index: 10;
+}
+
+// INPUT in the form where user is wrighting the task
+.todo__task-input {
+   height: 39px;
+   width: 100%;
+   padding-left: 10px;
+   font-family: $font_family;
+   font-size: 1.1rem;
+   color: $text_color;
+   border-radius: 5px;
+   border: none;
+   box-shadow: $grey_shadow;
+}

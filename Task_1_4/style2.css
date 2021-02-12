@@ -1,0 +1,400 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+   font-family: "Roboto", sans-serif;
+   color: rgb(135, 135, 135);
+}
+
+.product-list {
+   width: 100%;
+}
+
+.product-list__container {
+   width: 90%;
+   margin: 20px auto;
+   height: 100%;
+}
+
+a {
+   outline: none;
+   text-decoration: none;
+   color: rgb(135, 135, 135);
+}
+
+/* top deal ----------------------- */
+
+.product-list__top-deal {
+   border: 1px solid #ff6666;
+   height: 445px;
+   max-width: 385px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   padding: 0 20px;
+   font-size: 0.9rem;
+   margin: 0 auto;
+   transition: 0.2s;
+}
+
+.product-list__top-deal:hover {
+   box-shadow: 0px 0px 0px 3px rgba(255, 102, 102, 1);
+}
+
+.product-list__name {
+   transition: 0.2s;
+}
+
+.product-list__top-deal:hover .product-list__name {
+   box-shadow: 0px 1px 0px 0px rgb(135, 135, 135);
+}
+
+.product-list__top-deal img {
+   height: 63%;
+   align-self: center;
+   margin-top: 10px;
+}
+
+/* price --------------------- */
+
+.product-list__price {
+   display: flex;
+   justify-content: space-between;
+   align-items: baseline;
+   border-bottom: 1px dashed rgb(135, 135, 135);
+   padding-bottom: 3px;
+}
+
+.product-list__real-price span:nth-of-type(1) {
+   color: red;
+   font-size: 1.3rem;
+   margin-right: 5px;
+}
+
+.product-list__real-price span:nth-of-type(2) {
+   position: relative;
+   display: inline-block;
+}
+
+/* crossed out price ----------*/
+
+.product-list__real-price span:nth-of-type(2):after {
+   content: "";
+   display: block;
+   position: absolute;
+   left: 0;
+   top: 50%;
+   width: 100%;
+   height: 0;
+   border-bottom: 1px solid rgb(135, 135, 135);
+   transform: rotate(15deg);
+}
+
+/* info -------------------------- */
+
+.product-list__info {
+   width: 75%;
+   padding: 10px 0 10px 0;
+   line-height: 1.2rem;
+   font-size: 0.9rem;
+   color: rgb(135, 135, 135);
+   text-align: left;
+}
+
+/* conditions and vertical lines --------- */
+
+.product-list__conditions {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   border-top: 1px dashed rgb(135, 135, 135);
+   padding: 5px 0 5px 0;
+}
+
+.product-list__dash {
+   height: 1rem;
+   width: 1px;
+   background: rgb(135, 135, 135);
+}
+
+.product-list__shipping {
+   flex-grow: 1;
+}
+
+.product-list__new {
+   flex-grow: 2;
+}
+
+.product-list__term {
+   flex-grow: 1;
+}
+
+/* discount --------------------------- */
+
+.product-list__discount {
+   position: absolute;
+   left: 10px;
+   top: 10px;
+   background: #ff6666;
+   display: flex;
+   align-items: center;
+   text-align: center;
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   color: white;
+   font-size: 1rem;
+}
+
+/* regular deal orange ----------------------------------- */
+
+.product-list__regular-deal.product-list__regular-deal_orange {
+   border: 1px solid #ff931c;
+   height: 210px;
+   max-width: 385px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin: 20px auto 0 auto;
+   padding: 0 20px;
+   font-size: 0.9rem;
+   transition: 0.2s;
+}
+
+.product-list__regular-deal.product-list__regular-deal_orange:hover {
+   box-shadow: 0px 0px 0px 3px rgba(255, 147, 28, 1);
+}
+
+.product-list__regular-deal.product-list__regular-deal_orange:hover
+   .product-list__name {
+   box-shadow: 0px 1px 0px 0px rgb(135, 135, 135);
+}
+
+.product-list__description {
+   display: flex;
+   justify-content: space-between;
+   height: 70%;
+}
+
+.product-list__regular-deal img {
+   height: 67%;
+   align-self: center;
+}
+
+.product-list__regular-deal .product-list__info {
+   align-self: flex-end;
+   height: 54%;
+}
+
+.product-list__regular-deal .product-list__price {
+   border: none;
+}
+
+.product-list__regular-deal_orange .product-list__discount {
+   background: #ff931c;
+}
+
+/* regular deal yellow ----------------------------------- */
+
+.product-list__regular-deal.product-list__regular-deal_yellow {
+   border: 1px solid #ffbe18;
+   height: 210px;
+   max-width: 385px;
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-end;
+   margin: 20px auto 0 auto;
+   padding: 0 20px;
+   font-size: 0.9rem;
+   transition: 0.2s;
+}
+
+.product-list__regular-deal.product-list__regular-deal_yellow:hover {
+   box-shadow: 0px 0px 0px 3px rgba(255, 190, 24, 1);
+}
+
+.product-list__regular-deal.product-list__regular-deal_yellow:hover
+   .product-list__name {
+   box-shadow: 0px 1px 0px 0px rgb(135, 135, 135);
+}
+
+.product-list__regular-deal_yellow .product-list__discount {
+   background: #ffbe18;
+}
+
+.top-deal {
+   grid-area: top-deal;
+}
+
+.regular-deal-1 {
+   grid-area: regular-deal-1;
+}
+
+.regular-deal-2 {
+   grid-area: regular-deal-2;
+}
+
+.regular-deal-3 {
+   grid-area: regular-deal-3;
+}
+
+.regular-deal-4 {
+   grid-area: regular-deal-4;
+}
+
+@media screen and (min-width: 385px) {
+   /* top deal ---------------------------------- */
+
+   .product-list__top-deal img {
+      height: 62%;
+   }
+
+   .product-list__top-deal {
+      font-size: 1rem;
+   }
+
+   .product-list__real-price span:nth-of-type(1) {
+      font-size: 1.4rem;
+   }
+
+   .product-list__info {
+      font-size: 1rem;
+      width: 58%;
+   }
+
+   /* regular deal -------------------------------- */
+
+   .product-list__regular-deal .product-list__info {
+      width: 58%;
+   }
+
+   .product-list__regular-deal {
+      font-size: 1rem;
+   }
+
+   .product-list__regular-deal .product-list__price {
+      font-size: 1rem;
+   }
+
+   .product-list__regular-deal .product-list__conditions {
+      font-size: 1rem;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   .product-list__container {
+      display: grid;
+      grid-gap: 25px;
+      justify-content: center;
+   }
+
+   .product-list__other-products {
+      display: grid;
+      grid-auto-rows: 210px;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 25px;
+   }
+
+   .product-list__products {
+      display: grid;
+      justify-content: center;
+      grid-template-areas:
+         "top-deal regular-deal-1"
+         "top-deal regular-deal-2"
+         "regular-deal-3 regular-deal-4";
+      grid-template-rows: 210px 210px 210px;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 25px;
+   }
+
+   .product-list__top-deal {
+      margin: 0;
+   }
+
+   .product-list__regular-deal.product-list__regular-deal_yellow {
+      margin: 0;
+   }
+
+   .product-list__regular-deal.product-list__regular-deal_orange {
+      margin: 0;
+   }
+}
+
+@media screen and (min-width: 993px) {
+   .product-list__container {
+      display: grid;
+      grid-gap: 25px;
+   }
+
+   .product-list__other-products {
+      display: grid;
+      grid-auto-rows: 210px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+   }
+
+   .product-list__products {
+      display: grid;
+      justify-content: center;
+      grid-auto-flow: row;
+      grid-auto-rows: 210px;
+      grid-auto-columns: 385px;
+      grid-template-areas:
+         "top-deal regular-deal-1 regular-deal-2"
+         "top-deal regular-deal-3 regular-deal-4";
+      grid-template-rows: 210px 210px;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 25px;
+   }
+
+   .product-list__top-deal {
+      margin: 0;
+      font-size: 0.8rem;
+   }
+
+   .product-list__top-deal .product-list__info {
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal.product-list__regular-deal_yellow {
+      margin: 0;
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal.product-list__regular-deal_yellow
+      .product-list__info {
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal.product-list__regular-deal_orange {
+      margin: 0;
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal.product-list__regular-deal_orange
+      .product-list__info {
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal {
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal .product-list__price {
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal .product-list__conditions {
+      font-size: 0.8rem;
+   }
+
+   .product-list__regular-deal .product-list__info {
+      width: 58%;
+   }
+}

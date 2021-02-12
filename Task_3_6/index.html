@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_css/style.css" />
+    <script src="script.js"></script>
+    <title>Cabins or Camping Spots</title>
+  </head>
+  <body>
+    <section class="account">
+      <div class="account__container">
+        <h2>Create An Account</h2>
+        <form class="account__form">
+          <div class="account__input-container">
+            <label for="name" class="account__input-label">Username</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="account__input"
+              placeholder="Name"
+            />
+            <small></small>
+            <div class="account__prompt">
+              <img src="question.svg" alt="question" data-prompt="Allowed from 3 to 16 symbols, digits, letters, -, _">
+              <div></div>
+            </div>
+          </div>
+          <div class="account__input-container">
+            <label for="password" class="account__input-label">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="account__input"
+              placeholder="Password"
+            />
+            <small></small>
+            <div class="account__prompt">
+              <img src="question.svg" alt="question" data-prompt="At least 8 symbols. Has to contain lowercase, uppercase, digits, special symbols like !@#$&*">
+              <div></div>
+            </div>
+          </div>
+          <div class="account__input-container">
+            <label for="password-confirm" class="account__input-label"
+              >Password (confirm)</label
+            >
+            <input
+              type="password"
+              name="password-confirm"
+              id="password-confirm"
+              class="account__input"
+              placeholder="Confirm password"
+            />
+            <small></small>
+          </div>
+          <div class="account__input-container">
+            <label for="email" class="account__input-label"
+              >Email Address</label
+            >
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="account__input"
+              placeholder="Email"
+            />
+            <small></small>
+            <div class="account__prompt">
+              <img src="question.svg" alt="question" data-prompt="Email example test@test.com">
+              <div></div>
+            </div>
+          </div>
+          <div class="account__lodgings-container">
+            <h3>Preffered Lodgings</h3>
+            <ul>
+              <li>
+                <input
+                  type="checkbox"
+                  name="fire-cabins"
+                  id="fire-cabins"
+                  class="account__checkbox"
+                  value="Fire Cabins"
+                />
+                <label for="fire-cabins" class="account__checkbox-label"
+                  >Fire Cabins</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="horseshoe-cabins"
+                  id="horseshoe-cabins"
+                  class="account__checkbox"
+                  value="Horseshoe Cabins"
+                />
+                <label for="horseshoe-cabins" class="account__checkbox-label"
+                  >Horseshoe Cabins</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="spruce-cabins"
+                  id="spruce-cabins"
+                  class="account__checkbox"
+                  value="Spruce Cabins"
+                />
+                <label for="spruce-cabins" class="account__checkbox-label"
+                  >Spruce Cabins</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="ursa-major-cabins"
+                  id="ursa-major-cabins"
+                  class="account__checkbox"
+                  value="Ursa Major Cabins"
+                />
+                <label for="ursa-major-cabins" class="account__checkbox-label"
+                  >Ursa Major Cabins</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="bear-meadow-campground"
+                  id="bear-meadow-campground"
+                  class="account__checkbox"
+                  value="Bear Meadow Campground"
+                />
+                <label
+                  for="bear-meadow-campground"
+                  class="account__checkbox-label"
+                  >Bear Meadow Campground</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="lakeside-campground"
+                  id="lakeside-campground"
+                  class="account__checkbox"
+                  value="Lakeside Campground"
+                />
+                <label for="lakeside-campground" class="account__checkbox-label"
+                  >Lakeside Campground</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="leadfoot-campground"
+                  id="leadfoot-campground"
+                  class="account__checkbox"
+                  value="Leadfoot Campground"
+                />
+                <label for="leadfoot-campground" class="account__checkbox-label"
+                  >Leadfoot Campground</label
+                >
+              </li>
+              <li>
+                <input
+                  type="checkbox"
+                  name="talus-campground"
+                  id="talus-campground"
+                  class="account__checkbox"
+                  value="Talus Campground"
+                />
+                <label for="talus-campground" class="account__checkbox-label"
+                  >Talus Campground</label
+                >
+              </li>
+            </ul>
+          </div>
+          <button type="submit" class="account-btn">Create Account</button>
+        </form>
+      </div>
+      <div class="account__profile">
+        <div class="account__profile-container">
+          <h2>Profile</h2>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

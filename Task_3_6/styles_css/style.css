@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.account {
+  width: 100%;
+  font-family: sans-serif;
+}
+@media screen and (min-width: 1000px) {
+  .account {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.account h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px 0;
+  font-weight: 600;
+}
+.account h3 {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.account__profile {
+  width: 90%;
+  margin: 30px auto;
+  max-width: 500px;
+}
+
+.account__profile-container {
+  border: 2px solid #696969;
+  border-radius: 10px;
+  background: #d8d9dc;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+.account__profile-container h3 {
+  text-align: left;
+}
+.account__profile-container li {
+  margin-top: 20px;
+}
+.account__profile-container p {
+  margin-left: 10px;
+}
+@media screen and (max-width: 500px) {
+  .account__profile-container {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.account__container {
+  width: 90%;
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+.account__form {
+  width: 100%;
+}
+.account__form .account__input-container {
+  margin: 20px 0;
+  position: relative;
+}
+.account__form .account__input-container small {
+  position: absolute;
+  right: 50px;
+  bottom: -12px;
+  font-size: 0.8rem;
+  color: red;
+}
+@media screen and (max-width: 500px) {
+  .account__form .account__input-container small {
+    right: 40px;
+  }
+}
+.account__form .account__input {
+  border: 1px solid #b6b8b6;
+  padding: 5px;
+  display: block;
+  width: 90%;
+}
+@media screen and (min-width: 500px) {
+  .account__form .account__input {
+    display: inline;
+    width: 50%;
+  }
+}
+.account__form .account__input_error {
+  border: 1px solid red;
+}
+.account__form .account__input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+@media screen and (min-width: 500px) {
+  .account__form .account__input-label {
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+  }
+}
+.account__form .account__prompt {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  right: 5px;
+  bottom: 5px;
+  cursor: pointer;
+}
+.account__form .account__prompt img {
+  height: 20px;
+}
+@media screen and (min-width: 500px) {
+  .account__form .account__prompt {
+    right: 18px;
+  }
+}
+.account__form .account__prompt .account__prompt-text {
+  position: absolute;
+  width: 120px;
+  right: 0;
+  top: 22px;
+  z-index: 10;
+  border: 1px solid #696969;
+  border-radius: 5px;
+  background: #d8d9dc;
+  padding: 5px;
+}
+.account__form .account__lodgings-container {
+  max-width: 300px;
+}
+@media screen and (min-width: 500px) {
+  .account__form .account__lodgings-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.account__form .account__lodgings-container li {
+  margin-bottom: 5px;
+}
+.account__form .account__checkbox {
+  vertical-align: middle;
+}
+.account__form .account__checkbox-label {
+  vertical-align: middle;
+}
+.account__form button {
+  margin: 20px auto;
+  display: block;
+  padding: 5px 20px;
+  border: 1px solid #b6b8b6;
+}
+
+.account__lodgings-ul {
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

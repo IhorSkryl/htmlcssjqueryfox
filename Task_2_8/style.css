@@ -1,0 +1,121 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 20px auto;
+   padding: 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+   width: 60%;
+   max-width: 500px;
+   display: flex;
+   flex-direction: column;
+   background: #67c2d3;
+   border-radius: 10px;
+   text-align: center;
+   padding-bottom: 25px;
+   color: #ffffff;
+   margin: 0 auto;
+}
+
+.form {
+   background: #ffffff;
+   width: 90%;
+   margin: 0 auto;
+   padding: 20px;
+   text-align: left;
+   color: #ba997b;
+   font-size: 1.3rem;
+}
+
+#result {
+   width: 400px;
+   border: 2px solid green;
+   border-radius: 10px;
+   opacity: inherit;
+}
+
+#result::backdrop {
+   background: #ba997b;
+   opacity: 0.7;
+}
+
+#result p {
+   margin-bottom: 50px;
+}
+
+.input,
+textarea {
+   display: block;
+   margin: 0 auto;
+   padding: 10px;
+   outline: none;
+   width: 100%;
+   font-size: 1.1rem;
+   color: #585858;
+}
+
+label {
+   display: block;
+   text-align: left;
+}
+
+.input::placeholder,
+textarea::placeholder {
+   color: #a5a4a4;
+}
+
+label ~ .input {
+   margin-top: 5px;
+   margin-bottom: 30px;
+}
+
+textarea {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 1.1rem;
+   height: 200px;
+   margin-bottom: 30px;
+}
+
+button {
+   padding: 10px;
+   font-size: 1.1rem;
+   background: #ba997b;
+   border: none;
+   font-weight: bold;
+   color: #ffffff;
+   width: 100%;
+   outline: none;
+}
+
+.close {
+   background: rgb(109, 185, 65);
+}
+
+button:hover {
+   box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+
+/* just for training with attributes || .error */
+input[name="name"].error,
+input[name="e_mail"].error,
+textarea.error {
+   border: 1px solid red;
+   margin-bottom: 5px;
+}
+
+label#name-error,
+label#email-error,
+label#description-error {
+   color: red;
+   font-size: 1rem;
+   margin-bottom: 10px;
+   text-align: right;
+}

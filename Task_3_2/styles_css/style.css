@@ -1,0 +1,559 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+}
+
+.bike-registration {
+  width: 90%;
+  margin: 20px auto;
+  line-height: 1.5rem;
+  max-width: 600px;
+}
+@media screen and (min-width: 768px) {
+  .bike-registration {
+    width: 60%;
+  }
+}
+
+.bike-registration__title {
+  margin-bottom: 20px;
+}
+.bike-registration__title h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+@media screen and (min-width: 768px) {
+  .bike-registration__title h2 {
+    font-size: 2.5rem;
+  }
+}
+.bike-registration__title p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bike-registration__form {
+  font-weight: 400;
+}
+.bike-registration__form input {
+  border: 1px solid #bababa;
+  display: block;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.726);
+}
+.bike-registration__form input:focus {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.bike-registration__form input:last-of-type {
+  margin-bottom: 5px;
+}
+.bike-registration__form input.bike-registration__error {
+  border-bottom: 1px solid red;
+}
+.bike-registration__form input.bike-registration__error:focus {
+  box-shadow: 1px 1px 5px 0px rgba(255, 0, 0, 0.842);
+}
+.bike-registration__form li {
+  padding-bottom: 20px;
+  position: relative;
+}
+.bike-registration__form .bike-registration__btn-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.bike-registration__form button {
+  background: #ce1a2b;
+  color: white;
+  padding: 20px 50px;
+  margin-bottom: 10px;
+}
+
+.bike-registration__error-text {
+  position: absolute;
+  color: red;
+  right: 10px;
+  bottom: 0px;
+}
+
+.bike-choise__name-format {
+  display: block;
+  font-size: 0.9rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.bike-choise {
+  width: 90%;
+  margin: 20px auto;
+  line-height: 1.5rem;
+  max-width: 600px;
+}
+@media screen and (min-width: 768px) {
+  .bike-choise {
+    width: 60%;
+  }
+}
+.bike-choise h2 {
+  text-align: center;
+}
+
+.bike-choise__title {
+  margin-bottom: 20px;
+}
+.bike-choise__title h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .bike-choise__title h2 {
+    font-size: 2.5rem;
+  }
+}
+.bike-choise__title p {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.bike-choise__form textarea, .bike-choise__form input, .bike-choise__form select {
+  border: 1px solid #bababa;
+  display: block;
+  padding: 10px;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.726);
+}
+
+.bike-choise__form select:focus {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.bike-choise__form select.bike-registration__error {
+  border-bottom: 1px solid red;
+}
+.bike-choise__form select.bike-registration__error:focus {
+  box-shadow: 1px 1px 5px 0px rgba(255, 0, 0, 0.842);
+}
+.bike-choise__form fieldset li {
+  padding-bottom: 20px;
+  position: relative;
+}
+.bike-choise__form fieldset legend {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.bike-choise__form input:focus {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.bike-choise__form input:last-of-type {
+  margin-bottom: 5px;
+}
+.bike-choise__form input.bike-registration__error {
+  border-bottom: 1px solid red;
+}
+.bike-choise__form input.bike-registration__error:focus {
+  box-shadow: 1px 1px 5px 0px rgba(255, 0, 0, 0.842);
+}
+.bike-choise__form input[type=checkbox] {
+  width: fit-content;
+  display: inline;
+  margin-right: 10px;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+.bike-choise__form input[type=radio] {
+  display: inline;
+  width: fit-content;
+  margin-left: 10px;
+}
+.bike-choise__form textarea {
+  height: 100px;
+  resize: none;
+}
+.bike-choise__form textarea:focus {
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.bike-choise__form textarea.bike-registration__error {
+  border-bottom: 1px solid red;
+}
+.bike-choise__form textarea.bike-registration__error:focus {
+  box-shadow: 1px 1px 5px 0px rgba(255, 0, 0, 0.842);
+}
+.bike-choise__form small {
+  display: block;
+}
+.bike-choise__form button {
+  display: block;
+  background: #ce1a2b;
+  color: white;
+  padding: 20px 70px;
+  margin-left: auto;
+  margin-bottom: 300px;
+}
+
+.bike-choise__hr {
+  width: 200px;
+  height: 1px;
+  background: #bababa;
+  margin: 10px auto 40px auto;
+}
+
+.bike-choise__delivery-date {
+  display: flex;
+  justify-content: space-between;
+}
+.bike-choise__delivery-date li {
+  width: 32%;
+}
+.bike-choise__delivery-date select {
+  width: 100%;
+}
+
+.bike-choise__expiration {
+  display: flex;
+  justify-content: space-between;
+}
+.bike-choise__expiration li {
+  width: 49%;
+}
+
+.bike-choise__expiration-p {
+  padding-bottom: 0 !important;
+}
+
+.bike-choise__radio {
+  position: relative;
+}
+
+.bike-registration__error-text {
+  position: absolute;
+  color: red;
+  right: 10px;
+  bottom: 0px;
+}
+
+.bike-registration__error-text_radio {
+  bottom: 0;
+  left: 150px;
+}
+
+.bike-choise__phone-format {
+  display: block;
+  font-size: 0.9rem;
+}
+
+.bike-result {
+  width: 90%;
+  margin: 20px auto;
+  line-height: 2rem;
+  max-width: 600px;
+}
+@media screen and (min-width: 768px) {
+  .bike-result {
+    width: 60%;
+  }
+}
+.bike-result h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 800;
+  line-height: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .bike-result h2 {
+    font-size: 2.5rem;
+  }
+}
+.bike-result li {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #4d4b4b;
+}
+.bike-result li span {
+  color: #313030;
+  border-bottom: 1px solid #313030;
+}
+
+/*# sourceMappingURL=style.css.map */

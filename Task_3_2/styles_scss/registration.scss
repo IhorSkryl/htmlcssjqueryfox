@@ -1,0 +1,104 @@
+@import "NullStyle";
+
+$font_family: "Roboto", sans-serif;
+$shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+$red_shadow: 1px 1px 5px 0px rgba(255, 0, 0, 0.842);
+$button_background: #ce1a2b;
+
+body {
+   width: 100%;
+   font-family: $font_family;
+}
+
+.bike-registration {
+   width: 90%;
+   margin: 20px auto;
+   line-height: 1.5rem;
+   max-width: 600px;
+
+   @media screen and (min-width: 768px) {
+      width: 60%;
+   }
+}
+
+.bike-registration__title {
+   margin-bottom: 20px;
+
+   h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 800;
+      @media screen and (min-width: 768px) {
+         font-size: 2.5rem;
+      }
+   }
+
+   p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+   }
+}
+
+.bike-registration__form {
+   font-weight: 400;
+
+   input {
+      border: 1px solid #bababa;
+      display: block;
+      margin-bottom: 20px;
+      padding: 10px;
+      width: 100%;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.726);
+
+      &:focus {
+         box-shadow: $shadow;
+      }
+
+      &:last-of-type {
+         margin-bottom: 5px;
+      }
+
+      &.bike-registration__error {
+         border-bottom: 1px solid red;
+      }
+
+      &.bike-registration__error:focus {
+         box-shadow: $red_shadow;
+      }
+   }
+
+   li {
+      padding-bottom: 20px;
+      position: relative;
+   }
+
+   .bike-registration__btn-section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      margin-top: 40px;
+   }
+
+   button {
+      background: $button_background;
+      color: white;
+      padding: 20px 50px;
+      margin-bottom: 10px;
+   }
+}
+
+.bike-registration__error-text {
+   position: absolute;
+   color: red;
+   right: 10px;
+   bottom: 0px;
+}
+
+.bike-choise__name-format {
+   display: block;
+   font-size: 0.9rem;
+}

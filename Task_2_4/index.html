@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="ui-lightness/jquery-ui.css" />
+      <link rel="stylesheet" href="ui-lightness/theme.css" />
+      <!-- <link rel="stylesheet" href="jquery-ui.structure.css" /> -->
+      <link rel="stylesheet" href="style.css" />
+      <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script> -->
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"
+      ></script>
+      <script src="jquery-ui.js"></script>
+      <script src="script.js"></script>
+      <title>Form Widget</title>
+   </head>
+   <body>
+      <h1>One-Way Airlines: Let's make a reservation</h1>
+      <form action="#">
+         <div class="pick-date">
+            <label for="date" class="left-side">Pick a departure date</label>
+            <input type="text" id="date" />
+         </div>
+
+         <div class="pick-airport">
+            <label for="airport" class="left-side">Find an airport</label>
+            <input type="text" id="airport" />
+         </div>
+
+         <div class="meal-option">
+            <label for="meal" class="left-side">Meal options</label>
+            <select name="meal" id="meal">
+               <option value="No meal">No meal</option>
+               <option value="Breakfast">Breakfast</option>
+               <option value="Breakfast and Dinner"
+                  >Breakfast and Dinner</option
+               >
+            </select>
+         </div>
+
+         <div id="radio">
+            <label for="radio" class="ui-controlgroup-item left-side"
+               >Number of bags to check</label
+            >
+            <label for="radio-0" class="ui-controlgroup-item">0</label>
+            <input
+               type="radio"
+               name="radio-1"
+               id="radio-0"
+               class="ui-controlgroup-item"
+            />
+            <label for="radio-1" class="ui-controlgroup-item">1</label>
+            <input
+               type="radio"
+               name="radio-1"
+               id="radio-1"
+               class="ui-controlgroup-item"
+            />
+            <label for="radio-2" class="ui-controlgroup-item">2</label>
+            <input
+               type="radio"
+               name="radio-1"
+               id="radio-2"
+               class="ui-controlgroup-item"
+            />
+         </div>
+
+         <div id="check">
+            <label for="check" class="ui-controlgroup-item left-side"
+               >Type of seat youl'd like</label
+            >
+            <label for="check-0" class="ui-controlgroup-item">Aisle</label>
+            <input
+               type="checkbox"
+               name="check"
+               id="check-0"
+               class="ui-controlgroup-item"
+            />
+            <label for="check-1" class="ui-controlgroup-item">Window</label>
+            <input
+               type="checkbox"
+               name="check"
+               id="check-1"
+               class="ui-controlgroup-item"
+            />
+            <label for="check-2" class="ui-controlgroup-item">Exit Row</label>
+            <input
+               type="checkbox"
+               name="check"
+               id="check-2"
+               class="ui-controlgroup-item"
+            />
+            <label for="check-3" class="ui-controlgroup-item">Any Seat</label>
+            <input
+               type="checkbox"
+               name="check"
+               id="check-3"
+               class="ui-controlgroup-item"
+            />
+         </div>
+         <div class="continue">
+            <label class="left-side" for=""></label>
+            <button class="field">Continue reservation process</button>
+         </div>
+      </form>
+   </body>
+</html>

@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  color: #000000b2;
+}
+body p {
+  margin: 0;
+  padding: 0;
+}
+body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.todo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.todo__container {
+  border: 1px solid black;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 500px) {
+  .todo__container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+}
+
+.todo__to-be-done {
+  border: 1px solid blue;
+  min-height: 200px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  background: #f4f5f7;
+  padding: 10px 5px;
+}
+.todo__to-be-done h2 {
+  margin: 0 0 5px 0;
+  padding: 0 5px;
+}
+@media screen and (min-width: 500px) {
+  .todo__to-be-done {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+.todo__to-be-done .todo__task-wrapper li {
+  border: 1px solid red;
+}
+
+.todo__completed {
+  border: 1px solid blue;
+  min-height: 200px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  background: #f4f5f7;
+  padding: 10px 5px;
+}
+.todo__completed h2 {
+  margin: 0 0 5px 0;
+  padding: 0 5px;
+}
+.todo__completed .todo__completed-wrapper {
+  height: 80%;
+}
+.todo__completed .todo__completed-wrapper li {
+  border: 1px solid green;
+}
+
+.todo__add-task {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.todo__add-task:hover {
+  background: #e2e4e9;
+}
+
+/*# sourceMappingURL=style.css.map */

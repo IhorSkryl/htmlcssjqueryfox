@@ -1,0 +1,125 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   background: #f8f8f8;
+   font-family: "Roboto", sans-serif;
+   font-size: 1.1rem;
+   width: 100%;
+   min-height: 100%;
+   display: grid;
+   grid-template-rows: auto auto 1fr auto auto;
+   grid-template-areas:
+      "header"
+      "nav"
+      "main"
+      "aside"
+      "footer";
+}
+
+a {
+   outline: none;
+   text-decoration: none;
+   color: #000000;
+}
+
+ul {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+}
+
+header {
+   background: #ffffff;
+   grid-area: header;
+   height: 50px;
+}
+
+header img {
+   height: 100%;
+   padding: 5px 20px 5px 20px;
+}
+
+nav {
+   grid-area: nav;
+   padding: 10px 0 10px 0;
+   text-align: center;
+}
+
+nav ul {
+   display: flex;
+   justify-content: center;
+}
+
+nav ul li {
+   margin: 0 10px;
+}
+
+main {
+   grid-area: main;
+   padding: 10px 20px 10px 20px;
+   width: 100%;
+}
+
+main h1 {
+   text-align: center;
+   font-size: 2rem;
+}
+
+aside {
+   background: #ffffff;
+   grid-area: aside;
+   padding: 10px 20px 10px 20px;
+}
+
+footer {
+   background: #000000;
+   color: #eeeaea;
+   font-size: 0.8rem;
+   text-align: center;
+   grid-area: footer;
+   padding: 10px 20px 10px 20px;
+}
+
+@media screen and (min-width: 768px) {
+   body {
+      grid-template-rows: auto 1fr auto;
+      grid-template-columns: 1fr 5fr 1fr;
+      grid-template-areas:
+         "header header header"
+         "nav main aside"
+         "footer footer footer";
+   }
+
+   header {
+      height: 70px;
+   }
+
+   nav {
+      padding: 10px 0 10px 15px;
+      text-align: left;
+   }
+
+   nav ul {
+      display: block;
+   }
+
+   nav ul li {
+      padding-bottom: 10px;
+   }
+
+   main h1 {
+      font-size: 2.5rem;
+   }
+
+   footer {
+      padding: 20px 0 20px 0;
+   }
+}

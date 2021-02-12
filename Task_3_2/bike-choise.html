@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles_css/style.css" />
+      <script type="module" src="scripts/custom_validation/show-greeting.js"></script>
+      <script type="module" src="scripts/custom_validation/empty-input-validation.js"></script>
+      <script type="module" src="scripts/custom_validation/set-checkbox-script.js"></script>
+      <script type="module" src="scripts/custom_validation/phone-validation-script.js"></script>
+      <script type="module" src="scripts/custom_validation/dates-validation-script.js"></script>
+      <script type="module" src="scripts/custom_validation/radio-button-validation-script.js"></script>
+      <script type="module" src="scripts/custom_validation/card-number-validation-script.js"></script>
+      <script type="module" src="scripts/custom_validation/push-to-local-script.js"></script>
+      <title>Choose Your Bike</title>
+   </head>
+   <body>
+      <section class="bike-choise">
+         <div class="bike-choise__title">
+            <h2>Make Your Choise</h2>
+            <p>
+               <span id="bike-choise__greeting"></span>You can choose your bike
+               and order a delivery
+            </p>
+         </div>
+         <form
+            class="bike-choise__form"
+            action="result.html"
+            method="post"
+            id="form"
+         >
+            <fieldset class="bike-choise__fieldset">
+               <legend>Choose Your Bike</legend>
+               <ul>
+                  <li>
+                     <label for="select-bike">Bike</label>
+                     <select
+                        name="select_bike"
+                        id="select-bike"
+                        class="bike-choise__input"
+                     >
+                        <option disabled selected value="">Bike</option>
+                        <option value="Trek">Trek</option>
+                        <option value="Giant">Giant</option>
+                        <option value="Specialized">Specialized</option>
+                        <option value="Look">Look</option>
+                        <option value="Cannondale">Cannondale</option>
+                     </select>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="textarea-comment">Comment</label>
+                     <textarea
+                        name="textarea_comment"
+                        id="textarea-comment"
+                        class="bike-choise__input"
+                        cols=""
+                        rows=""
+                     ></textarea>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+               </ul>
+            </fieldset>
+            <div class="bike-choise__hr"></div>
+            <fieldset>
+               <legend>Billing Address</legend>
+               <ul>
+                  <li>
+                     <label for="first-name">First Name</label>
+                     <input
+                        type="text"
+                        name="first_name"
+                        id="first-name"
+                        class="bike-choise__input"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="last-name">Last Name</label>
+                     <input
+                        type="text"
+                        name="last_name"
+                        id="last-name"
+                        class="bike-choise__input"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="street-address">Street Address</label>
+                     <input
+                        type="text"
+                        name="billing_street_address"
+                        id="billing-street-address"
+                        class="bike-choise__input bike-choise__billing-address"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="state-region">State of Region</label>
+                     <select
+                        name="billing_state_region"
+                        id="billing-state-region"
+                        class="bike-choise__input bike-choise__billing-address"
+                     >
+                        <option disabled selected value="">Country</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Spain">Spain</option>
+                     </select>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="zip-code">ZIP</label>
+                     <input
+                        type="number"
+                        name="billing_zip_code"
+                        id="billing-zip-code"
+                        class="bike-choise__input bike-choise__billing-address"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="phone">Phone</label>
+                     <span class="bike-choise__phone-format">Format: 1234567890</span>
+                     <input
+                        type="tel"
+                        id="billing-phone"
+                        name="billing_phone"
+                        class="bike-choise__input bike-choise__phone bike-choise__billing-address"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+               </ul>
+            </fieldset>
+            <div class="bike-choise__hr"></div>
+            <fieldset>
+               <legend>Delivery Address</legend>
+               <ul>
+                  <li>
+                     <label for="street-address">Street Address</label>
+                     <input
+                        type="text"
+                        name="delivery_street_address"
+                        id="delivery-street-address"
+                        class="bike-choise__input bike-choise__delivery-address"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="state-region">State of Region</label>
+                     <select
+                        name="delivery_state_region"
+                        id="delivery-state-region"
+                        class="bike-choise__input bike-choise__delivery-address"
+                     >
+                        <option disabled selected value="">
+                           Country
+                        </option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Spain">Spain</option>
+                     </select>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="zip-code">ZIP</label>
+                     <input
+                        type="number"
+                        name="delivery_zip_code"
+                        id="delivery-zip-code"
+                        class="bike-choise__input bike-choise__delivery-address"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <label for="phone">Phone</label>
+                     <span class="bike-choise__phone-format">Format: 1234567890</span>
+                     <input
+                        type="tel"
+                        id="delivery-phone"
+                        name="delivery_phone"
+                        class="bike-choise__input bike-choise__phone bike-choise__delivery-address"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <p>Same as Billing Address?</p>
+                     <input
+                        type="checkbox"
+                        name="same_address"
+                        id="same-address-checkbox"
+                     />
+                     <label for="same-address-checkbox">Yes</label>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+               </ul>
+            </fieldset>
+            <div class="bike-choise__hr"></div>
+            <fieldset>
+               <legend>Delivery Date</legend>
+               <ul class="bike-choise__delivery-date">
+                  <li>
+                     <select
+                        name="delivery_day"
+                        id="delivery-day"
+                        class="bike-choise__input"
+                     >
+                        <option disabled selected value="">
+                           Choose Month First
+                        </option>
+                     </select>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <select
+                        name="delivery_month"
+                        id="delivery-month"
+                        class="bike-choise__input"
+                     >
+                        <option disabled selected value=""
+                           >Choose Year First</option
+                        >
+                     </select>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li>
+                     <select
+                        name="delivery_year"
+                        id="delivery-year"
+                        class="bike-choise__input"
+                     >
+                        <option disabled selected value="">Year</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                     </select>
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+               </ul>
+            </fieldset>
+            <div class="bike-choise__hr"></div>
+            <fieldset>
+               <legend>Payment</legend>
+               <p>Card Type</p>
+               <ul>
+                  <li>
+                     <input
+                        type="radio"
+                        name="card_type"
+                        id="card-type-visa"
+                        class="bike-choise__radio"
+                        value="Visa"
+                     />
+                     <label for="card-type-visa">Visa</label>
+                     <input
+                        type="radio"
+                        name="card_type"
+                        id="card-type-master"
+                        class="bike-choise__radio"
+                        value="MasterCard"
+                     />
+                     <label for="card-type-master">MasterCard</label>
+                     <small class="bike-registration__error-text bike-registration__error-text_radio" id="error-text-radio"></small>
+                  </li>
+                  <li>
+                     <label for="card-number">Card Number</label>
+                     <input
+                        type="number"
+                        name="card_number"
+                        id="card-number"
+                        class="bike-choise__input"
+                     />
+                     <small class="bike-registration__error-text"></small>
+                  </li>
+                  <li class="bike-choise__expiration-p">
+                     <p>Expiration</p>
+                  </li>
+                  <ul class="bike-choise__expiration">
+                     <li>
+                        <select
+                           name="expiration_month"
+                           id="expiration-month"
+                           class="bike-choise__input"
+                        >
+                           <option disabled selected value=""
+                              >Choose Year First</option
+                           >
+                        </select>
+                        <small class="bike-registration__error-text"></small>
+                     </li>
+                     <li>
+                        <select
+                           name="expiration_year"
+                           id="expiration-year"
+                           class="bike-choise__input"
+                        >
+                           <option disabled selected value="">Year</option>
+                           <option value="2020">2020</option>
+                           <option value="2021">2021</option>
+                           <option value="2022">2022</option>
+                           <option value="2023">2023</option>
+                           <option value="2024">2024</option>
+                        </select>
+                        <small class="bike-registration__error-text"></small>
+                     </li>
+                  </ul>
+               </ul>
+            </fieldset>
+            <button type="submit" id="submit-order-btn">Make an Order</button>
+         </form>
+      </section>
+   </body>
+</html>

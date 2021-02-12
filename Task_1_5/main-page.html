@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="base/jquery-ui.css" />
+      <!-- <link rel="stylesheet" href="jquery-ui.structure.css" /> -->
+      <link rel="stylesheet" href="style-template.css" />
+      <link rel="stylesheet" href="style-main.css" />
+
+      <script
+         src="https://code.jquery.com/jquery-3.5.1.js"
+         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+         crossorigin="anonymous"
+      ></script>
+      <script src="jquery-ui.js"></script>
+      <script src="script.js"></script>
+      <script src="script_carousel.js"></script>
+      <title>Bike Shop</title>
+   </head>
+   <body>
+      <header>
+         <a href="main-page.html">
+            <img src="img/spesh-logo.png" alt="logo" />
+         </a>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+         </ul>
+      </nav>
+      <main>
+         <div class="product-list">
+            <div class="product-list__container">
+               <div class="product-list__products">
+                  <a href="#" class="product-list__top-deal top-deal">
+                     <img src="img/top-deal.png" alt="specialized" />
+                     <div class="product-list__content">
+                        <h2>
+                           S-Works Shiv TT Disk
+                        </h2>
+                        <div class="product-list__info">
+                           For years, time trial bikes have had very similar
+                           attributes—skinny, deep airfoils, sketchy handling,
+                           subpar braking, and heavy frames.
+                        </div>
+                        <div class="product-list__price">
+                           ₴374,970.00
+                        </div>
+                     </div>
+                  </a>
+
+                  <a href="#" class="product-list__regular-deal regular-deal-1">
+                     <img src="img/regular-deal.png" alt="specialized" />
+                     <div class="product-list__content">
+                        <h2>
+                           S-Works Turbo Creo
+                        </h2>
+                        <div class="product-list__price">
+                           ₴356,999.00
+                        </div>
+                     </div>
+                  </a>
+                  <a href="#" class="product-list__regular-deal regular-deal-2">
+                     <img src="img/top-deal.png" alt="specialized" />
+                     <div class="product-list__content">
+                        <h2>
+                           S-Works Turbo Levo
+                        </h2>
+                        <div class="product-list__price">
+                           ₴342,999.00
+                        </div>
+                     </div>
+                  </a>
+                  <a href="#" class="product-list__regular-deal regular-deal-3">
+                     <img src="img/regular-deal.png" alt="specialized" />
+                     <div class="product-list__content">
+                        <h2>
+                           S-Works Venge Di2
+                        </h2>
+                        <div class="product-list__price">
+                           ₴328,999.00
+                        </div>
+                     </div>
+                  </a>
+                  <a href="#" class="product-list__regular-deal regular-deal-4">
+                     <img src="img/top-deal.png" alt="specialized" />
+                     <div class="product-list__content">
+                        <h2>
+                           S-Works Roubaix
+                        </h2>
+                        <div class="product-list__price">
+                           ₴319,999.00
+                        </div>
+                     </div>
+                  </a>
+               </div>
+               <div class="product-list__other-products">
+                  <a href="#" class="product-list__regular-deal">
+                     <img src="img/top-deal.png" alt="specialized" />
+                     <div class="product-list__content">
+                        <h2>
+                           S-Works Roubaix
+                        </h2>
+                        <div class="product-list__price">
+                           ₴319,999.00
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <section class="carousel">
+            <div class="carousel__container">
+               <div class="carousel__slides">
+                  <div class="carousel__slide">
+                     <div class="carousel__content">
+                        <h2>S-Works Roubaix</h2>
+                        <img src="img/top-deal.png" alt="specialized" />
+                        <p>₴319,999.00</p>
+                     </div>
+                  </div>
+                  <div class="carousel__slide">
+                     <div class="carousel__content">
+                        <h2>S-Works Venge Di2</h2>
+                        <img src="img/regular-deal.png" alt="specialized" />
+                        <p>₴328,999.00</p>
+                     </div>
+                  </div>
+                  <div class="carousel__slide">
+                     <div class="carousel__content">
+                        <h2>S-Works Shiv TT Disk</h2>
+                        <img src="img/top-deal.png" alt="specialized" />
+                        <p>₴374,970.00</p>
+                     </div>
+                  </div>
+               </div>
+               <button class="carousel__prev">&#10094;</button>
+               <button class="carousel__next">&#10095;</button>
+               <div class="carousel__dots">
+                  <div class="carousel__dot" data-dot="0"></div>
+                  <div class="carousel__dot" data-dot="1"></div>
+                  <div class="carousel__dot" data-dot="2"></div>
+               </div>
+            </div>
+         </section>
+
+         <div id="bikes">
+            <label for="autocomplete">Your favourite bike</label>
+            <input type="text" id="autocomplete" />
+         </div>
+         <div id="datepicker"></div>
+      </main>
+      <aside>Aside</aside>
+      <footer>
+         ©2020.<br />Specialized Bicycle Components. All Rights Reserved.
+      </footer>
+   </body>
+</html>

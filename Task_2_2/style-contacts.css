@@ -1,0 +1,59 @@
+label {
+   display: inline-block;
+   padding-bottom: 5px;
+   cursor: pointer;
+}
+
+form div {
+   margin-bottom: 20px;
+}
+
+form input {
+   width: 100%;
+   outline: none;
+   font-size: 1rem;
+   padding: 3px;
+}
+
+form textarea {
+   width: 100%;
+   outline: none;
+   font-size: 1rem;
+   padding: 3px;
+   height: 150px;
+}
+
+.button {
+   display: flex;
+   justify-content: center;
+}
+
+form button {
+   border: 1px solid #000000;
+   background: #000000;
+   color: #ffffff;
+   padding: 5px 10px 5px 10px;
+   font-size: 1rem;
+   outline: none;
+   transition: 0.2s;
+}
+
+form button:hover {
+   color: rgb(184, 179, 179);
+}
+
+form button:active {
+   color: #EA1F2F;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+   form {
+      width: 70%;
+   }
+}
+
+@media screen and (min-width: 1199px) {
+   form {
+      width: 60%;
+   }
+}

@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  margin: 20px auto;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h2 {
+  font-size: 2rem;
+  padding: 20px;
+  font-weight: 800;
+}
+
+.registration {
+  width: 95%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background: #67c2d3;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 25px;
+  color: #ffffff;
+  margin: 0 auto;
+}
+
+.registration__form {
+  background: #ffffff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  color: #ba997b;
+  font-size: 1.3rem;
+}
+.registration__form label {
+  display: block;
+  text-align: left;
+}
+.registration__form label ~ .registration__input {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+.registration__form .registration__input:last-of-type {
+  margin-bottom: 5px;
+}
+
+.registration__input {
+  border: 1px solid black;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  outline: none;
+  width: 100%;
+  font-size: 1.1rem;
+  color: #585858;
+}
+
+.registration__btn {
+  padding: 10px;
+  font-size: 1.1rem;
+  background: #ba997b;
+  border: none;
+  font-weight: bold;
+  color: #ffffff;
+  width: 100%;
+}
+
+.registration__error {
+  color: red;
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 20px;
+  opacity: 0;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  -khtml-user-select: none;
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+}
+
+.registration__error_visible {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=style.css.map */

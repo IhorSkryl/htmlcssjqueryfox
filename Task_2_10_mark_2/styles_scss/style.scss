@@ -1,0 +1,104 @@
+$tasks_bg: #f4f5f7;
+$text_color: #000000b2;
+$grey_shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.15);
+$green_shadow: 0px 1px 1px 1px rgba(17, 94, 7, 0.637);
+$font_family: "Montserrat", sans-serif;
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: $font_family;
+   color: $text_color;
+
+   p {
+      margin: 0;
+      padding: 0;
+   }
+
+   ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+   }
+}
+
+.todo {
+   width: 100%;
+   margin: 0 auto;
+}
+
+.todo__container {
+   border: 1px solid black;
+   padding: 20px;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   @media screen and (min-width: 500px) {
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+   }
+}
+
+// first column with TO BE DONE tasks
+.todo__to-be-done {
+   border: 1px solid blue;
+   min-height: 200px;
+   width: 100%;
+   max-width: 300px;
+   border-radius: 10px;
+   background: $tasks_bg;
+   padding: 10px 5px;
+
+   h2 {
+      margin: 0 0 5px 0;
+      padding: 0 5px;
+   }
+
+   @media screen and (min-width: 500px) {
+      margin-bottom: 0;
+      margin-right: 20px;
+   }
+
+   .todo__task-wrapper li {
+      border: 1px solid red;
+      // position: relative;
+   }
+}
+
+// second column with COMPLETED tasks
+.todo__completed {
+   border: 1px solid blue;
+   min-height: 200px;
+   width: 100%;
+   max-width: 300px;
+   border-radius: 10px;
+   background: $tasks_bg;
+   padding: 10px 5px;
+
+   h2 {
+      margin: 0 0 5px 0;
+      padding: 0 5px;
+   }
+
+   .todo__completed-wrapper {
+      height: 80%;
+   }
+
+   .todo__completed-wrapper li {
+      border: 1px solid green;
+   }
+}
+
+// add task button
+.todo__add-task {
+   padding: 10px;
+   margin-top: 5px;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.2s;
+   &:hover {
+      background: #e2e4e9;
+   }
+}

@@ -1,0 +1,206 @@
+@import "NullStyle";
+
+$font_family: "Roboto", sans-serif;
+$shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+$button_background: #ce1a2b;
+$input_text_color: rgba(0, 0, 0, 0.726);
+$border_color: #bababa;
+$border_style: 1px solid $border_color;
+
+body {
+   font-family: $font_family;
+}
+
+.bike-choise {
+   width: 90%;
+   margin: 20px auto;
+   line-height: 1.5rem;
+   max-width: 600px;
+
+   @media screen and (min-width: 768px) {
+      width: 60%;
+   }
+
+   h2 {
+      text-align: center;
+   }
+}
+
+.bike-choise__title {
+   margin-bottom: 20px;
+
+   h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 800;
+      line-height: 2rem;
+      @media screen and (min-width: 768px) {
+         font-size: 2.5rem;
+      }
+   }
+
+   p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: center;
+   }
+}
+
+%input-styles {
+   border: $border_style;
+   display: block;
+   padding: 10px;
+   width: 100%;
+   font-size: 1.2rem;
+   font-weight: 400;
+   color: $input_text_color;
+}
+
+.bike-choise__form {
+   select {
+      @extend %input-styles;
+
+      &:focus {
+         box-shadow: $shadow;
+      }
+
+      &.bike-registration__error {
+         border-bottom: 1px solid red;
+      }
+
+      &.bike-registration__error:focus {
+         box-shadow: $red_shadow;
+      }
+   }
+
+   fieldset {
+      li {
+         padding-bottom: 20px;
+         position: relative;
+      }
+
+      legend {
+         margin-bottom: 20px;
+         text-align: center;
+      }
+   }
+
+   input {
+      @extend %input-styles;
+
+      &:focus {
+         box-shadow: $shadow;
+      }
+
+      &:last-of-type {
+         margin-bottom: 5px;
+      }
+
+      &.bike-registration__error {
+         border-bottom: 1px solid red;
+      }
+
+      &.bike-registration__error:focus {
+         box-shadow: $red_shadow;
+      }
+   }
+
+   input[type="checkbox"] {
+      width: fit-content;
+      display: inline;
+      margin-right: 10px;
+      margin-left: 10px;
+      vertical-align: bottom;
+   }
+
+   input[type="radio"] {
+      display: inline;
+      width: fit-content;
+      margin-left: 10px;
+   }
+
+   textarea {
+      height: 100px;
+      resize: none;
+      @extend %input-styles;
+
+      &:focus {
+         box-shadow: $shadow;
+      }
+
+      &.bike-registration__error {
+         border-bottom: 1px solid red;
+      }
+
+      &.bike-registration__error:focus {
+         box-shadow: $red_shadow;
+      }
+   }
+
+   small {
+      display: block;
+   }
+
+   button {
+      display: block;
+      background: $button_background;
+      color: white;
+      padding: 20px 70px;
+      margin-left: auto;
+      margin-bottom: 300px;
+   }
+}
+
+.bike-choise__hr {
+   width: 200px;
+   height: 1px;
+   background: $border_color;
+   margin: 10px auto 40px auto;
+}
+
+.bike-choise__delivery-date {
+   display: flex;
+   justify-content: space-between;
+
+   li {
+      width: 32%;
+   }
+
+   select {
+      width: 100%;
+   }
+}
+.bike-choise__expiration {
+   display: flex;
+   justify-content: space-between;
+
+   li {
+      width: 49%;
+   }
+}
+
+.bike-choise__expiration-p {
+   padding-bottom: 0 !important;
+}
+
+.bike-choise__radio {
+   position: relative;
+}
+
+.bike-registration__error-text {
+   position: absolute;
+   color: red;
+   right: 10px;
+   bottom: 0px;
+}
+
+.bike-registration__error-text_radio {
+   bottom: 0;
+   left: 150px;
+}
+
+.bike-choise__phone-format {
+   display: block;
+   font-size: 0.9rem;
+}

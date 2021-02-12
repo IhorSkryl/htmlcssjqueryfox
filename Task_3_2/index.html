@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles_css/style.css" />
+      <script src="scripts/registration-script.js"></script>
+      <title>Order Form with Validation</title>
+   </head>
+   <body>
+      <section class="bike-registration">
+         <div class="bike-registration__title">
+            <h2>Join Us!</h2>
+            <p>Connect with our Bike Shop and get great stuff!</p>
+         </div>
+         <form
+            class="bike-registration__form"
+            action="bike-choise.html"
+            method="post"
+            id="form"
+         >
+            <ul>
+               <li>
+                  <label for="user-name">User Name</label>
+                  <span class="bike-choise__name-format">Format: No Spaces</span>
+                  <input
+                     type="text"
+                     name="user_name"
+                     id="user-name"
+                     class="bike-registration__input"
+                     autocomplete="off"
+                  />
+                  <small class="bike-registration__error-text"></small>
+               </li>
+               <li>
+                  <label for="password">Password</label>
+                  <input
+                     type="password"
+                     name="password"
+                     id="password"
+                     class="bike-registration__input"
+                  />
+                  <small class="bike-registration__error-text"></small>
+               </li>
+               <li>
+                  <label for="confirm-password">Confirm password</label>
+                  <input
+                     type="password"
+                     name="confirm_password"
+                     id="confirm-password"
+                     class="bike-registration__input"
+                  />
+                  <small class="bike-registration__error-text"></small>
+               </li>
+               <li class="bike-registration__btn-section">
+                  <button type="submit" id="no-login-btn">No Log In</button>
+                  <button type="submit" id="login-btn">Log In</button>
+               </li>
+            </ul>
+         </form>
+      </section>
+   </body>
+</html>

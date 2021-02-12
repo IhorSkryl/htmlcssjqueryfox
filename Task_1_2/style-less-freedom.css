@@ -1,0 +1,115 @@
+* {
+   box-sizing: border-box;
+}
+
+.page-wrap {
+   width: 800px;
+   margin: 20px auto;
+}
+
+.main-story {
+   position: relative;
+   margin: 0 0 25px 0;
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+a {
+   color: lightblue;
+}
+
+.story-intro {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.75);
+   padding: 20px;
+   color: white;
+}
+
+h1 {
+   font-size: 4em;
+}
+h1,
+h2 {
+   margin: 0 0 10px 0;
+}
+
+.story-intro h1 {
+   font-size: 2.5em;
+}
+.story-intro p {
+   margin: 0;
+}
+
+.sub-stories {
+   overflow: hidden;
+   margin: 0 0 25px 0;
+}
+
+.sub-story {
+   float: left;
+   width: 250px;
+   margin-right: 25px;
+   position: relative;
+   font-size: 80%;
+}
+
+.last {
+   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+   .page-wrap {
+      width: 500px;
+   }
+
+   .sub-story {
+      width: 500px;
+      /* margin: 25px 0; */
+   }
+
+   .sub-story:first-child {
+       margin-top: 25px;
+   }
+
+   .sub-story:nth-child(n + 1) {
+      margin-bottom: 25px;
+      margin-right: 0;
+   }
+
+   .sub-story:last-child {
+      margin-bottom: 0;
+   }
+
+   h1 {
+      font-size: 3em;
+   }
+
+   .story-intro h1 {
+      font-size: 2em;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .page-wrap {
+      width: 700px;
+   }
+
+   .sub-story {
+      width: 337.5px;
+      margin: 0 0 25px 0;
+   }
+
+   .sub-story:nth-child(even) {
+      margin-left: 25px;
+   }
+
+   .sub-story:last-child {
+      margin-bottom: 0;
+   }
+}

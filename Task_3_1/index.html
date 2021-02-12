@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="styles_css/style.css" />
+      <!-- <link rel="stylesheet" href="style.css" /> -->
+      <!-- <script src="styles_scss/script.js"></script> -->
+      <script src="script.js"></script>
+      <title>Registration Form</title>
+   </head>
+   <body>
+      <div id="fb-root"></div>
+      <script
+         async
+         defer
+         crossorigin="anonymous"
+         src="https://connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v7.0&appId=1156371971405646&autoLogAppEvents=1"
+         nonce="MdPjG8hE"
+      ></script>
+      <script>
+         window.fbAsyncInit = function () {
+            FB.init({
+               appId: "1156371971405646",
+               cookie: true,
+               xfbml: true,
+               version: "v7.0",
+            });
+
+            //  FB.AppEvents.logPageView();
+
+            FB.getLoginStatus(function (response) {
+               statusChangeCallback(response);
+            });
+         };
+
+         (function (d, s, id) {
+            var js,
+               fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+               return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+         })(document, "script", "facebook-jssdk");
+
+         function statusChangeCallback(response) {
+            if (response.status === "connected") {
+               setVisibleButtons(true);
+               console.log("Logged In with FB");
+               pushToSession(response);
+            } else {
+               setVisibleButtons(false);
+               console.log("Not Logged with FB");
+            }
+         }
+
+         function checkLoginState() {
+            FB.getLoginStatus(function (response) {
+               statusChangeCallback(response);
+            });
+         }
+
+         function pushToSession(response) {
+            sessionStorage.setItem("user", JSON.stringify(response));
+            let userFromFacebook = sessionStorage.getItem("user");
+            userFromFacebook = JSON.parse(userFromFacebook);
+            console.log(userFromFacebook);
+         }
+
+         function setVisibleButtons(isLoggedIn) {
+            if (isLoggedIn) {
+               document.getElementById("fb-login-btn").style.display = "none";
+               document.getElementById("fb-logout-btn").style.display = "block";
+               document.getElementById("login-btn").style.display = "none";
+               document.getElementById("logout-btn").style.display = "none";
+            } else {
+               document.getElementById("fb-login-btn").style.display = "block";
+               document.getElementById("fb-logout-btn").style.display = "none";
+               document.getElementById("login-btn").style.display = "block";
+               document.getElementById("logout-btn").style.display = "none";
+            }
+         }
+
+         function logoutFromFB(event) {
+            event.preventDefault();
+            FB.logout(function (response) {
+               setVisibleButtons(false);
+               console.log(response);
+               console.log("Not Logged with FB");
+            });
+         }
+      </script>
+
+      <section class="registration">
+         <h2>Feedback Form Validation</h2>
+         <form action="" method="POST" class="registration__form" id="form">
+            <label for="name">Enter Your Name:</label>
+            <input
+               type="text"
+               name="name"
+               id="name"
+               class="registration__input"
+               placeholder="Name"
+               required
+            />
+            <label for="email">Enter Your Email Address:</label>
+            <input
+               type="email"
+               name="e_mail"
+               id="email"
+               class="registration__input"
+               placeholder="Email"
+               required
+            />
+            <label for="password">Enter Your Password:</label>
+            <input
+               type="password"
+               name="password"
+               id="password"
+               class="registration__input"
+               placeholder="Password"
+               required
+            />
+            <label for="confirm-password">Confirm Your Password:</label>
+            <input
+               type="password"
+               name="confirm_password"
+               id="confirm-password"
+               class="registration__input"
+               placeholder="Confirm Password"
+               required
+            />
+            <div class="registration__error" id="error">
+               <p>Passwords Have To Match!</p>
+            </div>
+
+            <!-- Big FB login button - doesn't render in my web server -->
+            <!-- <div
+               class="fb-login-button"
+               data-size="large"
+               data-button-type="login_with"
+               data-layout="default"
+               data-auto-logout-link="false"
+               data-use-continue-as="false"
+               data-width="100%"
+               onlogin="checkLoginState();"
+            ></div> -->
+
+            <!-- Small FB login button - renders in my web server -->
+            <fb:login-button
+               id="fb-login-btn"
+               scope="public_profile,email"
+               onlogin="checkLoginState();"
+            >
+            </fb:login-button>
+            <button
+               id="fb-logout-btn"
+               class="registration__btn registration__btn-logout"
+               onclick="logoutFromFB(event)"
+            >
+               LOG OUT FROM FB
+            </button>
+            <button
+               type="submit"
+               name="login-btn"
+               id="login-btn"
+               class="registration__btn"
+            >
+               LOG IN
+            </button>
+            <button
+               type="submit"
+               name="logout-btn"
+               id="logout-btn"
+               class="registration__btn registration__btn-logout"
+            >
+               LOG OUT
+            </button>
+         </form>
+      </section>
+   </body>
+</html>

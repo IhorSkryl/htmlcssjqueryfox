@@ -1,0 +1,44 @@
+*{
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.container {
+   width: 80%;
+   border: 2px solid #8B0000;
+   margin: 20px auto;
+   height: 80vh;
+}
+
+.element {
+   height: 50px;
+   width: 100%;
+   cursor: move;
+}
+
+.elem-1 {
+   background: green;
+}
+.elem-2 {
+   background: blue;
+}
+.elem-3 {
+   background: orange;
+}
+.elem-4 {
+   background: violet;
+}
+.elem-5 {
+   background: yellow;
+}
+.elem-6 {
+   background: red;
+}
+.elem-7 {
+   background: lightblue;
+}
+

@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ffffff;
+}
+
+.widget {
+  max-width: 600px;
+  margin: 20px auto;
+}
+.widget h2 {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 20px 0;
+  font-weight: 800;
+}
+.widget .widget__temp-info {
+  width: 300px;
+  margin: 0 auto;
+}
+.widget .widget__temp-info p {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.widget .widget__icon-span img {
+  width: 50px;
+}
+.widget .widget__temperature {
+  font-size: 1.8rem;
+}
+.widget .widget__coords {
+  color: #da9271;
+}
+.widget .widget__table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  width: 300px;
+}
+.widget .widget__table tr:nth-of-type(odd) {
+  background: #f1f1f1;
+}
+.widget .widget__table td {
+  border: 1px solid #808080;
+  padding: 10px;
+  line-height: 1.5rem;
+}
+
+.widget__topic h2 {
+  text-align: left;
+}
+
+.widget__five-days-heading {
+  border: 1px solid #808080;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+.widget__five-days {
+  border-bottom: 1px solid #808080;
+  display: flex;
+}
+
+.widget__five-days:last-child {
+  border-bottom: none;
+}
+
+.widget__five-days_no-line {
+  border: none;
+}
+
+.widget__five-day-time {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.widget__five-day-time img {
+  width: 50px;
+}
+
+.widget__five-day-weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.8rem;
+  width: 50%;
+  padding: 10px;
+}
+.widget__five-day-weather .widget__temp-span {
+  color: #ffffff;
+  background: #999999;
+  padding: 5px 15px;
+  border-radius: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */

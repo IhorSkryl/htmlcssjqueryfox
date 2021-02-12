@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_css/style.css" />
+    <script src="script-order2.js"></script>
+    <title>Two-Part Order Form 2</title>
+  </head>
+  <body>
+    <section class="order2">
+      <div class="order2__container">
+        <h2>Sign Up</h2>
+        <div class="order2__header">
+          <div class="order2__info">Your info</div>
+          <div class="order2__preferences">Your preferences</div>
+        </div>
+        <form class="order2__form" id="form2">
+          <input type="hidden" name="name" id="name" class="order2__hidden-input" />
+          <input type="hidden" name="email" id="email" class="order2__hidden-input" />
+          <input type="hidden" name="tel" id="tel" class="order2__hidden-input" />
+          <input type="hidden" name="address" id="address" class="order2__hidden-input" />
+          <input type="hidden" name="city" id="city" class="order2__hidden-input" />
+          <input type="hidden" name="state" id="state" class="order2__hidden-input" />
+          <input type="hidden" name="zip" id="zip" class="order2__hidden-input" />
+          <ul class="order2__ul-outer">
+            <li>
+              <h3>Food allergies</h3>
+              <textarea name="allergies" id="" class=""></textarea>
+            </li>
+            <li>
+              <h3>Frequency</h3>
+              <ul class="order2__ul-inner">
+                <li>
+                  <input type="radio" name="frequency" id="weekly" value="Weekly" checked class="" />
+                  <label for="weekly">Weekly</label>
+                </li>
+                <li>
+                  <input type="radio" name="frequency" id="biweekly" value="Biweekly" class="" />
+                  <label for="biweekly">Biweekly</label>
+                </li>
+                <li>
+                  <input type="radio" name="frequency" id="monthly" value="Monthly" class="" />
+                  <label for="monthly">Monthly</label>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h3>Package size</h3>
+              <ul class="order2__ul-inner">
+                <li>
+                  <input type="radio" name="size" id="taste-test" value="Taste test" checked class="" />
+                  <label for="taste-test">Taste test</label>
+                </li>
+                <li>
+                  <input type="radio" name="size" id="healthy-highlight" value="Healthy highlight" class="" />
+                  <label for="healthy-highlight">Healthy highlight</label>
+                </li>
+                <li>
+                  <input type="radio" name="size" id="full-plate" value="Full plate" class="" />
+                  <label for="full-plate">Full plate</label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="order2__submit-div">
+            <button type="submit" id="btn">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

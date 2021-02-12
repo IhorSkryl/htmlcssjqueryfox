@@ -1,0 +1,122 @@
+* {
+   box-sizing: border-box;
+}
+
+.page-wrap {
+   width: 65%;
+   margin: 20px auto;
+}
+
+.main-story {
+   position: relative;
+   margin: 0 0 25px 0;
+   width: 100%;
+   height: 100vh;
+   background-image: url("https://i.picsum.photos/id/884/1980/1980.jpg");
+   background-size: cover;
+   background-position: 50% 13%;
+}
+
+img {
+   display: block;
+   width: 100%;
+}
+
+a {
+   color: lightblue;
+}
+
+.story-intro {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.75);
+   padding: 20px;
+   color: white;
+}
+
+h1 {
+   font-size: 4em;
+}
+h1,
+h2 {
+   margin: 0 0 10px 0;
+}
+
+.story-intro h1 {
+   font-size: 2.5em;
+}
+.story-intro p {
+   margin: 0;
+}
+
+.sub-stories {
+   overflow: hidden;
+   margin: 0 0 25px 0;
+   width: 100%;
+}
+
+.sub-story {
+   float: left;
+   width: 32%;
+   margin-right: 2%;
+   position: relative;
+   font-size: 80%;
+}
+
+.last {
+   margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+   .page-wrap {
+      width: 100%;
+   }
+
+   .main-story {
+      height: 80vh;
+      background-position: 0 0;
+   }
+
+   h1 {
+      font-size: 3.5em;
+   }
+
+   .story-intro h1 {
+      font-size: 2em;
+   }
+
+   .sub-story {
+      width: 90%;
+      margin: 0 5%;
+   }
+
+   .sub-story:nth-child(n + 1) {
+      margin-bottom: 25px;
+   }
+
+   .sub-story:last-child {
+      margin-bottom: 0;
+   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+   .sub-story {
+      width: 48%;
+      margin: 0 0 25px 0;
+   }
+
+   .main-story {
+      height: 80vh;
+      background-position: 0 0;
+   }
+
+   .sub-story:nth-child(even) {
+      margin-left: 4%;
+   }
+
+   .sub-story:last-child {
+      margin-bottom: 0;
+   }
+}

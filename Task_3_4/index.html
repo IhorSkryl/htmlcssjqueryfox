@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+         rel="stylesheet"
+      />
+      <script src="https://use.fontawesome.com/dd397a6426.js"></script>
+      <link rel="stylesheet" href="styles_css/style.css" />
+      <script src="script2.js"></script>
+      <title>Customer Page</title>
+   </head>
+   <body>
+      <section class="customer-page">
+         <h2>Customer Page</h2>
+         <form method="post" id="form">
+            <fieldset class="">
+               <ul>
+                  <li>
+                     <h3>Choose The Product</h3>
+                     <select
+                        name="product"
+                        id="product"
+                        class="customer-page__product customer-page__data"
+                     >
+                        <option disabled selected value=""
+                           >Choose The Product</option
+                        >
+                        <option value="Trek">Trek</option>
+                        <option value="Giant">Giant</option>
+                        <option value="Specialized">Specialized</option>
+                        <option value="Look">Look</option>
+                        <option value="Cannondale">Cannondale</option>
+                     </select>
+                     <div id="cost" class="customer-page__cost">
+                        <span id="product-name"></span> costs 5000. Get your random discount from 5 to 10%. Good luck!
+                        <button id="discount-button">Get Discount</button>
+                        <span id="discount-value">Your discount is: </span><br>
+                        <span id="discount-cost">Cost with discount: </span>
+                     </div>
+                  </li>
+               </ul>
+            </fieldset>
+            <fieldset>
+               <h3>Personal Data</h3>
+               <ul>
+                  <li class="customer-page__li">
+                     <label for="first-name"><i class="fa fa-user"></i></label>
+                     <input
+                        type="text"
+                        name="first_name"
+                        id="first-name"
+                        class="customer-page__input customer-page__data"
+                        placeholder="First Name"
+                     />
+                  </li>
+                  <li class="customer-page__li">
+                     <label for="last-name"><i class="fa fa-user"></i></label>
+                     <input
+                        type="text"
+                        name="last_name"
+                        id="last-name"
+                        class="customer-page__input customer-page__data"
+                        placeholder="Last Name"
+                     />
+                  </li>
+               </ul>
+            </fieldset>
+            <fieldset>
+               <h3>Date of Purchase</h3>
+               <ul class="customer-page__date-ul">
+                  <li>
+                     <div class="customer-page__li customer-page__date-li">
+                        <label for="first-buy"
+                           ><i class="fa fa-calendar"></i
+                        ></label>
+                        <input
+                           type="date"
+                           name="first_buy"
+                           id="first-buy"
+                           class="customer-page__input customer-page__data"
+                           placeholder=""
+                        />
+                     </div>
+                     <small>First Buy</small>
+                  </li>
+                  <li>
+                     <div class="customer-page__li customer-page__date-li">
+                        <label for="next-buy"
+                           ><i class="fa fa-calendar"></i
+                        ></label>
+                        <input
+                           type="date"
+                           name="next_buy"
+                           id="next-buy"
+                           class="customer-page__input customer-page__data"
+                           placeholder=""
+                        />
+                     </div>
+                     <small>Next Buy</small>
+                  </li>
+               </ul>
+            </fieldset>
+            <fieldset>
+               <h3>Payment Details</h3>
+               <div class="customer-page__btn-group">
+                  <div class="customer-page__btn customer-page__btn_active" data-index="1">
+                     <i class="fa fa-cc-visa"></i><span>Credit Card</span>
+                  </div>
+                  <div class="customer-page__btn" data-index="2">
+                     <i class="fa fa-cc-paypal"></i><span>Paypal</span>
+                  </div>
+                  <div class="customer-page__btn" data-index="3">
+                     <i class="fa fa-money"></i><span>Cash</span>
+                  </div>
+               </div>
+               <ul class="customer-page__tab-content  customer-page__tab-content_active" data-tab="1">
+                  <li class="customer-page__li">
+                     <label for="card-number"
+                        ><i class="fa fa-credit-card"></i
+                     ></label>
+                     <input
+                        type="text"
+                        class="customer-page__input customer-page__input-payment customer-page__data"
+                        id="card-number"
+                        name="card_number"
+                        placeholder="Card Number"
+                     />
+                  </li>
+                  <li class="customer-page__li customer-page__li-expiration">
+                     <div class="customer-page__card-cvc">
+                        <label for="cvc"><i class="fa fa-user"></i></label>
+                        <input
+                           type="text"
+                           class="customer-page__input customer-page__input-payment customer-page__data"
+                           id="cvc"
+                           name="cvc"
+                           placeholder="Card CVC"
+                        />
+                     </div>
+                     <div class="customer-page__expiration">
+                        <select
+                           name="month"
+                           id="month"
+                           class="customer-page__input-expiration customer-page__data"
+                        >
+                           <option disabled selected value="">MM</option>
+                           <option value="January">January</option>
+                           <option value="February">February</option>
+                           <option value="March">March</option>
+                           <option value="April">April</option>
+                           <option value="May">May</option>
+                           <option value="June">June</option>
+                           <option value="July">July</option>
+                           <option value="August">August</option>
+                           <option value="September">September</option>
+                           <option value="October">October</option>
+                           <option value="November">November</option>
+                           <option value="December">December</option>
+                        </select>
+                        <select
+                           name="year"
+                           id="year"
+                           class="customer-page__input-expiration customer-page__data"
+                        >
+                           <option disabled selected value="">YY</option>
+                           <option value="2020">2020</option>
+                           <option value="2021">2021</option>
+                           <option value="2022">2022</option>
+                           <option value="2023">2023</option>
+                           <option value="2024">2024</option>
+                        </select>
+                     </div>
+                  </li>
+               </ul>
+               <ul class="customer-page__tab-content" data-tab="2">
+                  <li>Hello from Paypal</li>
+               </ul>
+               <ul class="customer-page__tab-content" data-tab="3">
+                  <li>Hello from Cash</li>
+               </ul>
+            </fieldset>
+            <button type="submit">SUBMIT</button>
+         </form>
+      </section>
+   </body>
+</html>

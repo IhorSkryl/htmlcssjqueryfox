@@ -1,0 +1,23 @@
+.container {
+   display: flex;
+}
+
+.draggy {
+   border: 1px solid black;
+   width: 200px;
+}
+
+.draggy li{
+   border: 1px solid red;
+   cursor: pointer;
+   /* position: relative; */
+}
+
+.droppy {
+   border: 1px solid blue;
+   width: 200px;
+   height: 100px;
+}
+.droppy li{
+   border: 1px solid green;
+}

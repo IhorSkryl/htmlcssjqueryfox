@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="carousel">
+         <div class="carousel__wrapper">
+
+            <input type="radio" name="slides" id="slide-1" class="carousel__radio">
+            <div class="carousel__slide slide-1">
+               <div class="carousel__content">
+                  <h1>Slide 1</h1>
+                  <p>Content1</p>
+               </div>
+            </div>
+            
+            <input type="radio" name="slides" id="slide-2" class="carousel__radio">
+            <div class="carousel__slide slide-2">
+               <div class="carousel__content">
+                  <h1>Slide 2</h1>
+                  <p>Content2</p>
+               </div>
+            </div>
+
+            <input type="radio" name="slides" id="slide-3" class="carousel__radio">
+            <div class="carousel__slide slide-3">
+               <div class="carousel__content">
+                  <h1>Slide 3</h1>
+                  <p>Content3</p>
+               </div>
+            </div>
+
+         </div>
+         <button class="carousel__go-left">&#10094;</button>
+         <button class="carousel__go-right" disabled>&#10095;</button>
+
+         <ul class="carousel__label-list">
+            <li><label for="slide-1" class="carousel__label"><div class="carousel__label_checked"></div></label></li>
+            <li><label for="slide-2" class="carousel__label"></label></li>
+            <li><label for="slide-3" class="carousel__label"></label></li>
+         </ul>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,276 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.order {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.order__container {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.order__container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.order__container input {
+  border: 1px solid #5b5c5c;
+  border-radius: 3px;
+}
+
+.order__header {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.order__header .order__info {
+  padding: 10px 20px;
+  color: #e2d15d;
+  background: #808080;
+  border: 1px solid #5b5c5c;
+}
+.order__header .order__preferences {
+  padding: 10px 20px;
+  color: #b8baba;
+  background: #a8a9a9;
+}
+
+.order__form ul {
+  margin-top: 10px;
+}
+.order__form li {
+  margin: 5px auto;
+}
+.order__form label {
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+  font-weight: 800;
+}
+.order__form input {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  padding: 1px 5px;
+  max-width: 200px;
+}
+.order__form #city,
+.order__form #zip {
+  width: 25%;
+}
+.order__form #state {
+  width: 10%;
+}
+
+.order__ancor {
+  text-align: center;
+  margin-top: 20px;
+}
+.order__ancor a, .order__ancor button {
+  border: 1px solid #5b5c5c;
+  border-radius: 10px;
+  padding: 3px 10px;
+  background: #B8AD9B;
+  color: #e2d15d;
+}
+
+.order2 {
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.order2__container {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+}
+.order2__container h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.order2__container input {
+  border: 1px solid #5b5c5c;
+  border-radius: 3px;
+}
+
+.order2__header {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+.order2__header .order2__info {
+  padding: 10px 20px;
+  color: #b8baba;
+  background: #a8a9a9;
+}
+.order2__header .order2__preferences {
+  padding: 10px 20px;
+  color: #e2d15d;
+  background: #808080;
+  border: 1px solid #5b5c5c;
+}
+
+.order2__form .order2__ul-outer {
+  width: 70%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 450px) {
+  .order2__form .order2__ul-outer {
+    width: 40%;
+  }
+}
+.order2__form .order2__ul-outer li {
+  margin-top: 20px;
+}
+.order2__form .order2__ul-outer h3 {
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.order2__form .order2__ul-outer .order2__ul-inner {
+  margin-left: 20px;
+}
+.order2__form .order2__ul-outer .order2__ul-inner li {
+  margin-top: 5px;
+}
+.order2__form .order2__ul-outer .order2__ul-inner li input {
+  vertical-align: middle;
+}
+.order2__form textarea {
+  border: 1px solid #5b5c5c;
+  border-radius: 3px;
+  margin-left: 20px;
+  padding: 3px 5px;
+  height: 50px;
+}
+
+.order2__submit-div {
+  text-align: center;
+  margin-top: 20px;
+}
+.order2__submit-div button {
+  border: 1px solid #5b5c5c;
+  border-radius: 10px;
+  padding: 3px 10px;
+  background: #b8ad9b;
+  color: #e2d15d;
+}
+
+.order2__data {
+  font-family: sans-serif;
+  margin: 20px auto;
+}
+.order2__data h2 {
+  text-align: center;
+  font-size: 2rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.order2__data h3 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+.order2__data .order2__data-container {
+  width: 80%;
+  max-width: 280px;
+  margin: 20px auto;
+  border: 1px solid #5b5c5c;
+  background: #D4D3D3;
+  padding: 10px;
+}
+.order2__data .order2__data-ul {
+  margin-top: 10px;
+}
+.order2__data .order2__no-data {
+  color: red;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,133 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+}
+
+.slide-1 {
+   background: #2364aa;
+}
+
+.slide-2 {
+   background: #3da5d9;
+}
+
+.slide-3 {
+   background: #73bfb8;
+}
+
+.carousel {
+   background: gray;
+   height: 40vh;
+   width: 50vw;
+   border: 1px solid black;
+   margin: 20px auto;
+   text-align: center;
+   position: relative;
+   overflow: hidden;
+}
+
+.carousel__wrapper {
+   display: flex;
+   height: 100%;
+   position: relative;
+   width: 100%;
+}
+
+.carousel__slide {
+   min-width: 100%;
+   border: 1px solid red;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   position: relative;
+   left: 0;
+   transition: all 1s;
+}
+
+.carousel__go-left {
+   position: absolute;
+   border: none;
+   background: rgba(0, 0, 0, 0.13);
+   height: 100%;
+   width: 10%;
+   outline: none;
+   transition: 0.2s;
+   color: white;
+   cursor: pointer;
+   font-size: 3.5em;
+   left: 0;
+   top: 0;
+}
+
+.carousel__go-right {
+   position: absolute;
+   border: none;
+   background: rgba(0, 0, 0, 0.13);
+   height: 100%;
+   width: 10%;
+   outline: none;
+   transition: 0.2s;
+   color: white;
+   cursor: pointer;
+   font-size: 3.5em;
+   right: 0;
+   top: 0;
+}
+
+.carousel__go-left:hover, .carousel__go-right:hover {
+   background: rgba(0, 0, 0, 0.33);
+}
+
+button:disabled {
+   color: rgba(255, 255, 255, 0.288);
+}
+
+.carousel__content {
+   color: white;
+   font-family: 'Montserrat', sans-serif;
+   width: 60%;
+   padding-bottom: 40px;
+}
+
+.carousel__radio {
+   position: absolute;
+   left: -9999px;
+}
+
+.carousel__radio:checked ~ .carousel__slide {
+   transform: translateX(-100%);
+}
+
+.carousel__label-list {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: flex;
+   position: absolute;
+   top: 92%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 20%;
+   justify-content: space-between;
+}
+
+.carousel__label {
+   display: block;
+   height: 15px;
+   width: 15px;
+   border: 1px solid white;
+   border-radius: 50%;
+   background: white;
+}
+
+.carousel__label_checked {
+   height: 100%;
+   width: 100%;
+   background: white;
+   border-radius: 50%;
+}

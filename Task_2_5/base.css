@@ -1,0 +1,35 @@
+* {
+   box-sizing: border-box;
+}
+
+body {
+   padding: 20px;
+   margin: 0;
+   background: lightskyblue;
+   position: relative;
+}
+
+#container {
+   width: 100%;
+}
+
+#header, #content, #footer {
+   margin: 0 auto;
+   width: 50%;
+}
+
+.puff-container {
+   width: 100px;
+   height: 100px;
+   position: absolute;
+   display: none;
+   overflow: hidden;
+   transform: translate(-50%, -50%);
+   z-index: 10;
+}
+
+.puff-img {
+   width: 100%;
+   position: absolute;
+   top: 100%;
+}

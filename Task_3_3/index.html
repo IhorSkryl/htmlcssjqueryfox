@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+         rel="stylesheet"
+      />
+      <link rel="stylesheet" href="styles_css/style.css" />
+      <script src="script.js"></script>
+      <title>Image Carousel</title>
+   </head>
+   <body>
+      <section class="carousel">
+         <div class="carousel__container">
+            <div class="carousel__slides" id="slides">
+               <div class="carousel__slide">
+                  <img src="images/5.svg" alt="slide" />
+               </div>
+               <div class="carousel__slide">
+                  <img src="images/1.svg" alt="slide" />
+               </div>
+               <div class="carousel__slide">
+                  <img src="images/2.svg" alt="slide" />
+               </div>
+               <div class="carousel__slide">
+                  <img src="images/3.svg" alt="slide" />
+               </div>
+               <div class="carousel__slide">
+                  <img src="images/4.svg" alt="slide" />
+               </div>
+               <div class="carousel__slide">
+                  <img src="images/5.svg" alt="slide" />
+               </div>
+               <div class="carousel__slide">
+                  <img src="images/1.svg" alt="slide" />
+               </div>
+            </div>
+            <button class="carousel__prev" id="prev">&#10094;</button>
+            <button class="carousel__next" id="next">&#10095;</button>
+            <div class="carousel__dots">
+               <div
+                  class="carousel__dot carousel__dot_active"
+                  data-dot="1"
+               ></div>
+               <div class="carousel__dot" data-dot="2"></div>
+               <div class="carousel__dot" data-dot="3"></div>
+               <div class="carousel__dot" data-dot="4"></div>
+               <div class="carousel__dot" data-dot="5"></div>
+            </div>
+         </div>
+      </section>
+      <div class="modal" id="modal"></div>
+   </body>
+</html>

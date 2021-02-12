@@ -1,0 +1,20 @@
+.text {
+   padding: 5px;
+   font-size: 1.2rem;
+}
+
+.ui-datepicker-trigger {
+   font-size: 1.2rem;
+   padding: 5px 10px;
+   background: #000000;
+   color: #ffffff;
+   transition: 0.2s;
+}
+
+button:hover {
+   color: rgb(184, 179, 179);
+}
+
+button:active {
+   color: #EA1F2F;
+}

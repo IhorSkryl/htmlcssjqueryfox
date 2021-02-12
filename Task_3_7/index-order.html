@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles_css/style.css" />
+    <title>Two-Part Order Form 1</title>
+  </head>
+  <body>
+    <section class="order">
+      <div class="order__container">
+        <h2>Sign Up</h2>
+        <div class="order__header">
+          <div class="order__info">Your info</div>
+          <div class="order__preferences">Your preferences</div>
+        </div>
+        <form
+          action="index-order2.html"
+          method="GET"
+          class="order__form"
+          id="form"
+        >
+          <ul>
+            <li>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" class="" />
+            </li>
+            <li>
+              <label for="tel">Phone</label>
+              <input type="tel" name="tel" id="tel" class="" />
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label for="address">Address</label>
+              <input type="text" name="address" id="address" class="" />
+            </li>
+            <li>
+              <label for="city">City</label>
+              <input type="text" name="city" id="city" class="" />
+            </li>
+            <li>
+              <label for="state">State</label>
+              <input type="text" name="state" id="state" class="" />
+            </li>
+            <li>
+              <label for="zip">Zip</label>
+              <input type="text" name="zip" id="zip" class="" />
+            </li>
+          </ul>
+          <div class="order__ancor">
+            <button id="btn">Next ></button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
